@@ -43,7 +43,7 @@ export default SlackFunction(
     const keyword = parsedMsg[0];
     const tz = checkTimezone(parsedMsg[1]);
 
-    const today = new Date();
+    const today = env && env.testDate ? new Date(env.testDate) : new Date();
 
     let dt = datetime();
     try {
