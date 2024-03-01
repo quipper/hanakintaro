@@ -37,7 +37,6 @@ export const ResponseFunctionDefinition = DefineFunction({
 export default SlackFunction(
   ResponseFunctionDefinition,
   async ({ inputs, env }) => {
-    console.log("debug test");
     const { message } = inputs;
 
     const parsedMsg = parseInputs(message);
