@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
       - uses: denoland/setup-deno@v1
         with:
-          deno-version: '1.41.0'
+          deno-version: '2.6.8'
       - name: Run fmt
         run: |
           deno fmt --check .
